@@ -43,9 +43,14 @@ require_relative 'lib/CalendarDisplayer'
 
 
 newevent = Event.new("2022-01-01 09:00", 10, "Sandbox calendar challenge", ["truc@machin.com", "bidule@chose.fr"])
+newevent2 = Event.new("2022-01-04 14:00", 10, "Sandbox calendar challenge", ["truc@machin.com", "bidule@chose.fr"])
+newevent3 = Event.new("2022-01-04 11:00", 10, "Sandbox calendar challenge", ["truc@machin.com", "bidule@chose.fr"])
+newevent3 = Event.new("2022-01-25 11:00", 10, "Sandbox calendar challenge", ["truc@machin.com", "bidule@chose.fr"])
 
 
-CalendarDisplayer.new(Event.all).row_constructor(1)
+
+
+CalendarDisplayer.new(Event.all).display
 
 
 
